@@ -1,0 +1,32 @@
+body {
+    background: #eee;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main__header {
+    text-align: center;
+}
+
+.accordion {
+    padding: 0;
+    margin: 0 auto;
+    width: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.accordion .accordion-item {
+    border-top: 2px solid #b9b9b9;
+    padding: 1em;
+    color: #0674fa;
+    cursor: pointer;
+}
+
+.accordion .accordion_header {
+    margin: 0;
+}
+
+.accordion-item .accordion_header {
+    display: flex;
+    justify-content: space-between;
+}
+
