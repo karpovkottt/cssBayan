@@ -108,8 +108,13 @@ body {
 }
 
 @media (max-width: 320px) {
+
+    .accordion {
+        width: 100%;
+    }
+
     .accordion_image {
-        height: 30%;
+        height: 16em;
     }
 
     .main__header {
@@ -119,4 +124,9 @@ body {
     .accordion_header {
         font-size: 0.7em;
     }
+
+    .accordion-item:focus,
+    .accordion-item:focus .accordion-item-content {
+    height: 17em;
+}
 }
