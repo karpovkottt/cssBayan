@@ -1,3 +1,54 @@
+/* hover and focus */
+
+:focus {
+    outline: none;
+}
+
+.accordion:hover .accordion-item:hover .accordion-item-content {
+    height: 20em;
+}
+
+.accordion:hover .accordion-item:hover .plus {
+    display: inline-block;
+    transform: rotate(45deg);
+    translate: 0.4em 0.4em;
+    transition: 0.6s;
+}
+
+.accordion-item:focus .plus {
+    display: inline-block;
+    transform: rotate(45deg);
+    translate: 0.4em 0.4em;
+    transition: 0.6s;
+}
+
+.accordion-item:focus h2 {
+    color: #000;
+}
+
+.accordion:hover .plus {
+    overflow: visible;
+}
+
+.accordion:hover .accordion-item,
+.accordion-item-content {
+    color: #000;
+}
+
+.accordion-item-content, .plus,
+.accordion:hover .accordion-item-content {
+    height: 0;
+    overflow: hidden;
+    transition: 0.6s;
+}
+
+.accordion-item:focus,
+.accordion-item:focus .accordion-item-content {
+    height: 20em;
+}
+
+/* main styles */
+
 body {
     background: #eee;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -29,4 +80,7 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
+
+
 
